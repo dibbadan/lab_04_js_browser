@@ -1,0 +1,58 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.user-icon {
+    margin-right: 5px;
+}
+
+.d-flex {
+    margin: auto;
+}
+
+#sidebar {
+    min-height: 100vh;
+    background-color: #e3f2fd;
+}
+
+#content {
+    min-height: 100vh;
+    background-color: white;
+}
+
+#buttons {
+    margin: 10px;
+}
+
+button {
+    align-items: left;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+
+button:focus{
+    background-color:blue;
+    color: white;
+}
+
+
+
+.btn-circle {
+    width: 50px;
+    height: 50px;
+    padding: 6px 0px;
+    border-radius: 35px;
+    text-align: center;
+    line-height: 1.42857;
+    color: white;
+}
+
+#add-button {
+    float: right;
+}
