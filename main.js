@@ -45,7 +45,7 @@ function filterFavorites(films) {
             const buttonX = tr.querySelector('button');
             buttonX.addEventListener('click', (event) => {
                 console.log(`Delete film ${film.id}`);
-                films.filmArray = films.filmArray.filter((f) => f.id !== film.id);
+                films.filmArray = films.filmArray.filter((f) => f.id !== film.id && f.favorites == true);
                 // re-generate table
                 generateTable(films);
             });
@@ -71,7 +71,7 @@ function filterBest(films) {
             const buttonX = tr.querySelector('button');
             buttonX.addEventListener('click', (event) => {
                 console.log(`Delete film ${film.id}`);
-                films.filmArray = films.filmArray.filter((f) => f.id !== film.id);
+                films.filmArray = films.filmArray.filter((f) => f.id !== film.id && f.rating === 5);
                 // re-generate table
                 generateTable(films);
             });
